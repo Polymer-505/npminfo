@@ -1,6 +1,6 @@
 {
   "name": "@polymer505/npminfo",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "CLI tool for looking up npm package info and searching the registry",
   "repository": {
     "type": "git",
