@@ -1,0 +1,48 @@
+{
+  "name": "@polymer505/npminfo",
+  "version": "0.0.0",
+  "description": "CLI tool for looking up npm package info and searching the registry",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Polymer-505/npminfo"
+  },
+  "homepage": "https://github.com/Polymer-505/npminfo#readme",
+  "bugs": {
+    "url": "https://github.com/Polymer-505/npminfo/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build:win": "pkg index.js --targets latest-win-x64 --output ./build/npminfo-win.exe",
+    "build:win-arm64": "pkg index.js --targets latest-win-arm64 --output ./build/npminfo-win-arm64.exe",
+    "build": "pkg index.js --targets latest-linux-x64 --output ./build/npminfo-linux",
+    "build-arm64": "pkg index.js --targets latest-linux-arm64 --output ./build/npminfo-linux-arm64"
+  },
+  "bin": {
+    "npminfo": "./index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
+  "keywords": [
+    "npm",
+    "cli",
+    "package",
+    "registry",
+    "search",
+    "info",
+    "npm-info"
+  ],
+  "author": "Polymer-505",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@yao-pkg/pkg": "^6.22.0"
+  },
+  "dependencies": {
+    "commander": "^15.0.0"
+  }
+}
